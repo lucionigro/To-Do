@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Qservices\Desktop\Trabajo\PROYECTOS PERSONALES\ToDo .Net Vuejs\backend-tareas\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Qservices\Desktop\Trabajo\PROYECTOS PERSONALES\ToDo .Net Vuejs\backend-tareas\obj\Release\net6.0\PubTmp\EFSQLScripts\backend_tareas.Context.AplicationDbContext.sql" />
+</sitemanifest>

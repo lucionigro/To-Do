@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQRwVAN+FvEWjYLpNQaO6EgAAAAACAAAAAAAQZgAAAAEAACAAAAAtbppzmhPDB0T1kdbMfio+KL309qaxxinDzhNP+JSmuAAAAAAOgAAAAAIAACAAAADPr6JlEZHtuetjd60u0vvHF893qRgS26mKbtI80bFXTIAAAADOkA+rgWlH0DDanvIkHmxXb6UQ3dwuaHnOTO1/gKT33fUz9qrbxQ/gVbM99f5p7BGyh6j1F4Q5RROTP3rUq5d+Z+HVQfWtjfxsH6KSPpm0BatHdr6qLIXBxaF4Hikamog4CHyCOU2x119jhGZVKyCmOY4qu6P/qhOnpR1aTMkmQUAAAABWWzevTVupW47VKtchHtgIR0YHohr9KP15L7fQdfTozgYF10kPodJfOQD3lc83A58qbByZPiTE0xg1/eVXmHbJ</EncryptedPassword>
+    <History>True|2023-01-30T15:56:58.9324939Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConexionSQL">
+      <Value>Data Source=tcp:backend-tareasdbserverlucio.database.windows.net,1433%3bInitial Catalog=backend-tareas_db%3bUser Id=lucionigro%40backend-tareasdbserverlucio%3bPassword=Korriban2001%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="backend_tareas.Context.AplicationDbContext">
+      <Value>Data Source=tcp:backend-tareasdbserverlucio.database.windows.net,1433%3bInitial Catalog=backend-tareas_db%3bUser Id=lucionigro%40backend-tareasdbserverlucio%3bPassword=Korriban2001%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
