@@ -1,19 +1,19 @@
 <template>
-    <div>
-      <h1 class="display-4 text-center">Listado de Tareas</h1>
+    <div class="aplication">
+      <h2 class="display-4 text-center">To-Do List✔️</h2>
       <hr>
       <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-md-12 col-sm-12 col-lg-12">
           <div class="card mt-4">
             <div class="card-body">
               <div class="input-group">
                 <input type="text" class="form-control form-control-lg" placeholder="Agregar Tarea" v-model="tarea">
                 <div class="input-group-append">
-                  <button class="btn btn-success btn-lg" v-on:click="agregarTarea()">Agregar</button>
+                  <button class="btn btn-success btn-lg" v-on:click="agregarTarea()" >Agregar</button>
                 </div>
               </div>
               <br>
-              <h5 v-if="listTareas.length == 0">No hay tareas para realizar</h5>
+              <h5 v-if="listTareas.length == 0">No hay tareas para realizar🤟</h5>
               <ul class="list-group">
                 <li v-for="(tarea, index) of listTareas" :key="index"
                     class="list-group-item d-flex justify-content-between">
