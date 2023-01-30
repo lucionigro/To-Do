@@ -38,6 +38,7 @@
 
 <script>
 import axios from "axios";
+const URL = "https://backend-tareas20230130124743.azurewebsites.net/api/Tarea/"
     export default {
         name: 'Tarea-todo',
         data(){
@@ -52,7 +53,7 @@ import axios from "axios";
                     nombre: this.tarea,
                     estado: false
                 }
-                axios.post("http://localhost:5124/api/Tarea/" , tarea).then(response => {
+                axios.post(URL , tarea).then(response => {
                     console.log(response);
                     this.obtenerTareas();
                 }).catch(error =>{
@@ -62,7 +63,7 @@ import axios from "axios";
                 this.tarea = '';
             },
             eliminarTarea(id){
-                axios.delete("http://localhost:5124/api/Tarea/" + id).then(response => {
+                axios.delete(URL + id).then(response => {
                     console.log(response);
                     this.obtenerTareas();
                 }).catch(error => {
@@ -72,7 +73,7 @@ import axios from "axios";
             },
             editarTarea(tarea, id){
                 /*this.listTareas[index].estado = !tarea.estado*/
-                axios.put("http://localhost:5124/api/Tarea/" + id, tarea).then(response=>{
+                axios.put(URL + id, tarea).then(response=>{
                     console.log(response);
                     this.obtenerTareas();          
                 }).catch(error =>{
@@ -81,7 +82,7 @@ import axios from "axios";
 
             },
             obtenerTareas(){
-              axios.get("http://localhost:5124/api/Tarea").then(response =>{
+              axios.get(URL).then(response =>{
                 console.log(response);
                 this.listTareas = response.data;
               })
@@ -97,16 +98,4 @@ import axios from "axios";
 .cursor {
     cursor: pointer;
 }
-body {
-	background: var(--light);
-	color: var(--dark);
-}
-h4 {
-	color: var(--grey);
-	font-size: 0.875rem;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
-}
-
-
 </style>
